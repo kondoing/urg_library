@@ -1220,7 +1220,7 @@ void urg_wakeup(urg_t *urg)
 int urg_is_stable(urg_t *urg)
 {
     const char *stat = urg_sensor_status(urg);
-    return strncmp("Stable", stat, 6) ? 0 : 1;
+    return (strstr(stat,"Stable") != NULL) ||(strstr(stat, "well") != NULL) ? 1: 0;  
 }
 
 
