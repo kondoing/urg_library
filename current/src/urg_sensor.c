@@ -1291,7 +1291,6 @@ static const int receive_II_command_response(urg_t *urg,
                         buffer, buffer_size);
 
     return ret;
-
 }
 
 
