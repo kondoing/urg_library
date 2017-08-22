@@ -5,7 +5,6 @@ syntax: glob
 *.exe
 current/html
 current/html_ja
-Debug
 
 current/dox/multiecho_image.png
 current/dox/sensor_angle_image.png

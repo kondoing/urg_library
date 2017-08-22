@@ -1,4 +1,0 @@
-﻿  open_urg_sensor.c
-  get_multiecho.c
-  コードを生成中...
-LINK : fatal error LNK1104: ファイル 'urg.lib' を開くことができません。
