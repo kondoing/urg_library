@@ -1,0 +1,54 @@
+﻿  urg_utils.c
+  urg_tcpclient.c
+  urg_serial_utils.c
+  urg_serial.c
+  urg_sensor.c
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1228): error C2143: 構文エラー : ';' が '型' の前にありません。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1232): error C2275: 'size_t' : この型は演算子として使用できません
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h(29) : 'size_t' の宣言を確認してください。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1232): error C2146: 構文エラー : ';' が、識別子 'end_ch_len' の前に必要です。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1232): error C2065: 'end_ch_len' : 定義されていない識別子です。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1232): error C2065: 'end_ch' : 定義されていない識別子です。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1232): warning C4047: '関数' : 間接参照のレベルが 'const char *' と 'int' で異なっています。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1232): warning C4024: 'strlen' : の型が 1 の仮引数および実引数と異なります。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1233): error C2143: 構文エラー : ';' が '型' の前にありません。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1234): error C2275: 'size_t' : この型は演算子として使用できません
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h(29) : 'size_t' の宣言を確認してください。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1234): error C2146: 構文エラー : ';' が、識別子 'j' の前に必要です。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1234): error C2065: 'j' : 定義されていない識別子です。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1236): error C2065: 'j' : 定義されていない識別子です。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1236): error C2065: 'j' : 定義されていない識別子です。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1236): error C2065: 'end_ch_len' : 定義されていない識別子です。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1236): error C2065: 'j' : 定義されていない識別子です。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1237): error C2065: 'receive_buffer' : 定義されていない識別子です。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1237): warning C4047: '初期化中' : 間接参照のレベルが 'const char *' と 'int' で異なっています。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1239): error C2065: 'i' : 定義されていない識別子です。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1239): error C2065: 'i' : 定義されていない識別子です。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1239): error C2065: 'lines' : 定義されていない識別子です。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1239): error C2065: 'i' : 定義されていない識別子です。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1240): error C2065: 'start_str' : 定義されていない識別子です。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1240): warning C4047: '関数' : 間接参照のレベルが 'const char *' と 'int' で異なっています。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1240): warning C4024: 'strncmp' : の型が 2 の仮引数および実引数と異なります。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1240): error C2065: 'start_str_len' : 定義されていない識別子です。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1242): error C2065: 'start_str_len' : 定義されていない識別子です。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1242): error C2065: 'end_ch' : 定義されていない識別子です。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1242): error C2065: 'j' : 定義されていない識別子です。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1242): error C2109: 配列または、ポインターでない変数に添字が使われました。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1242): error C2198: 'strchr' : 呼び出しに対する引数が少なすぎます。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1245): error C2065: 'dest' : 定義されていない識別子です。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1245): warning C4022: 'memcpy' : 1 番目の実引数のポインターの型が、仮引数のポインターの型と異なります。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1245): error C2065: 'start_str_len' : 定義されていない識別子です。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1246): error C2065: 'start_str_len' : 定義されていない識別子です。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1247): error C2065: 'dest' : 定義されていない識別子です。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1253): warning C4047: 'return' : 間接参照のレベルが 'int' と 'void *' で異なっています。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1309): warning C4013: 関数 'copy_token' は定義されていません。int 型の値を返す外部関数と見なします。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1310): warning C4047: '=' : 間接参照のレベルが 'char *' と 'int' で異なっています。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1331): warning C4047: '=' : 間接参照のレベルが 'char *' と 'int' で異なっています。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1356): warning C4047: '=' : 間接参照のレベルが 'char *' と 'int' で異なっています。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1362): warning C4047: '=' : 間接参照のレベルが 'char *' と 'int' で異なっています。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1389): warning C4047: '=' : 間接参照のレベルが 'char *' と 'int' で異なっています。
+c:\users\administrator\documents\github\urg_library\current\src\urg_sensor.c(1414): warning C4047: '=' : 間接参照のレベルが 'char *' と 'int' で異なっています。
+  urg_ring_buffer.c
+  urg_debug.c
+  urg_connection.c
+  コードを生成中...
