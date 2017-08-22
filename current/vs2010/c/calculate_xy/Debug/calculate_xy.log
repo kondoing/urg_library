@@ -1,0 +1,4 @@
+﻿  open_urg_sensor.c
+  calculate_xy.c
+  コードを生成中...
+LINK : fatal error LNK1104: ファイル 'urg.lib' を開くことができません。

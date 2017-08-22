@@ -42,7 +42,7 @@ enum {
     PP_RESPONSE_LINES = 10,
     VV_RESPONSE_LINES = 7,
     II_RESPONSE_LINES = 9,
-    II_ERROR_RESPONSE_LINES =4, 
+    II_ERROR_RESPONSE_LINES = 4, 
 
     MAX_TIMEOUT = 140,
 };
@@ -50,6 +50,7 @@ enum {
 
 static const char NOT_CONNECTED_MESSAGE[] = "not connected.";
 static const char RECEIVE_ERROR_MESSAGE[] = "receive error.";
+static const char FALSE_ERROR_MESSAGE[] = "false receive.";
 
 
 //! \~japanese チェックサムの計算  \~english Calculates the checksum value
@@ -1283,13 +1284,13 @@ static const int receive_II_command_response(urg_t *urg,
                                             char *buffer, int buffer_size)
 {
     const int vv_expected[] = { 0, EXPECTED_END };
-    int ret;    //受信電文の行数
+    int ret; 
     const char* command ="II\n";
 
-        ret = scip_response(urg, command, vv_expected, urg->timeout,
+    ret = scip_response(urg, command, vv_expected, urg->timeout,
                         buffer, buffer_size);
 
-        return ret;
+    return ret;
 
 }
 
@@ -1391,6 +1392,7 @@ const char *urg_sensor_status(urg_t *urg)
 
     p = copy_token(urg->return_buffer,
                    receive_buffer, "STAT:", ";", II_RESPONSE_LINES);
+
     return (p) ? p : RECEIVE_ERROR_MESSAGE;
 }
 
@@ -1408,7 +1410,7 @@ const char *urg_sensor_state(urg_t *urg)
         return NOT_CONNECTED_MESSAGE;
     }
 
-   ret = receive_II_command_response(urg, receive_buffer, RECEIVE_BUFFER_SIZE);
+    ret = receive_II_command_response(urg, receive_buffer, RECEIVE_BUFFER_SIZE);
     
     if (ret != II_RESPONSE_LINES && ret != II_ERROR_RESPONSE_LINES) {
         return  FALSE_RECEIVE_MESSAGE;
