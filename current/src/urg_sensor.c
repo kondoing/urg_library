@@ -50,7 +50,6 @@ enum {
 
 static const char NOT_CONNECTED_MESSAGE[] = "not connected.";
 static const char RECEIVE_ERROR_MESSAGE[] = "receive error.";
-static const char FALSE_ERROR_MESSAGE[] = "false receive.";
 
 
 //! \~japanese チェックサムの計算  \~english Calculates the checksum value
@@ -1386,7 +1385,7 @@ const char *urg_sensor_status(urg_t *urg)
     ret = receive_II_command_response(urg, receive_buffer, RECEIVE_BUFFER_SIZE);
     
     if (ret != II_RESPONSE_LINES && ret != II_ERROR_RESPONSE_LINES) {
-        return FALSE_RECEIVE_MESSAGE;
+        return RECEIVE_ERROR_MESSAGE;
     }
 
     p = copy_token(urg->return_buffer,
@@ -1412,7 +1411,7 @@ const char *urg_sensor_state(urg_t *urg)
     ret = receive_II_command_response(urg, receive_buffer, RECEIVE_BUFFER_SIZE);
     
     if (ret != II_RESPONSE_LINES && ret != II_ERROR_RESPONSE_LINES) {
-        return  FALSE_RECEIVE_MESSAGE;
+        return  RECEIVE_ERROR_MESSAGE;
     }
 
     p = copy_token(urg->return_buffer,
