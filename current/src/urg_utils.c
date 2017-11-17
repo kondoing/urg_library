@@ -1,7 +1,7 @@
 /*!
   \file
   \~japanese
-  \brief URG ƒZƒ“ƒT—p‚Ì•â•ŠÖ”
+  \brief URG ï¿½Zï¿½ï¿½ï¿½Tï¿½pï¿½Ì•â•ï¿½Öï¿½
   \~english
   \brief Auxiliary functions for the sensor
   \~
@@ -84,7 +84,7 @@ void urg_distance_min_max(const urg_t *urg,
 
     *min_distance = urg->min_distance;
 
-    // \~japanese urg_set_measurement_data_size() ‚ğ”½‰f‚µ‚½‹——£‚ğ•Ô‚·
+    // \~japanese urg_set_measurement_data_size() ï¿½ğ”½‰fï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô‚ï¿½
     // \~english returns the size configured with urg_set_measurement_data_size()
     *max_distance =
         (urg->range_data_byte == URG_COMMUNICATION_2_BYTE) ?
@@ -135,15 +135,7 @@ double urg_index2rad(const urg_t *urg, int index)
 
     actual_index = min(max(0, index), urg->last_data_index);
 
-<<<<<<< HEAD
-
-
     // \~japanese scanning_skip_step = 0 ï¿½È‚ï¿½ ï¿½Xï¿½eï¿½bï¿½vï¿½ï¿½Cï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½gï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½ï¿½ÈŠOï¿½ï¿½scanning_skip_stepï¿½Ì’lï¿½ï¿½ï¿½ï¿½ï¿½Xï¿½eï¿½bï¿½vï¿½ï¿½ç‚·
-
-=======
-    // \~japanese scanning_skip_step = 0 ‚È‚ç ƒXƒeƒbƒv‚ğƒCƒ“ƒNƒŠƒƒ“ƒg‚µA‚»‚êˆÈŠO‚Íscanning_skip_step‚Ì’l‚¾‚¯ƒXƒeƒbƒv‚ğ‚¸‚ç‚·
-    
->>>>>>> parent of 1a25ea7... Merge branch '201711_forvs2017' of https://github.com/kondoing/urg_library into 201711_forvs2017
     step = actual_index * max(1, urg->scanning_skip_step) - urg->front_data_index + urg->received_first_index;
     
     return urg_step2rad(urg, step);
